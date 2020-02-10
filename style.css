@@ -16,19 +16,53 @@ h1,h2,h3,h4,h5, h6{
   font-weight: 700;
 }
 
+
+/* Masthead */
 .masthead{
   margin: 0;
-  height: 95vh;
+  height: 100vh;
   background: linear-gradient(-45deg, #333 0%, #222 100%);
 }
 
-#projects{
-  min-height: 80vh;
+.btn-xl {
+  padding: 1.15rem 2.20rem;
+  font-size: 1.25rem;
+}
+
+.btn-outline-primary {
+  transition: background-color 0.5s, color 0.5s;
+  margin-right: .5rem;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007BFE;
+  color: white; 
+}
+
+.btn-outline-secondary{
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6C757D;
+  color: white;
 }
 
 .content-section {
   padding-top: 4.5em;
   padding-bottom: 4.5em;
+}
+
+/* Project card */
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-card{
+  border: 1px solid gainsboro;
 }
 
 /* Footer */
@@ -53,32 +87,6 @@ h1,h2,h3,h4,h5, h6{
 
 .social-link:hover {
   background-color: #007BFE;
-  color: white;
-}
-
-/* Buttons*/
-
-.btn-xl {
-  padding: 1.15rem 2.20rem;
-  font-size: 1.25rem;
-}
-
-.btn-outline-primary {
-  transition: background-color 0.5s, color 0.5s;
-  margin-right: .5rem;
-}
-
-.btn-outline-primary:hover {
-  background-color: #007BFE;
-  color: white; 
-}
-
-.btn-outline-secondary{
-  transition: background-color 0.5s, color 0.5s;
-}
-
-.btn-outline-secondary:hover {
-  background-color: #6C757D;
   color: white;
 }
 
@@ -118,5 +126,17 @@ i.fa-angle-up::before {
 @media (max-width: 600px) { 
   h1, h2, h3{
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px){
+  .padding-on-mobile{
+    padding: 0.5rem 0.5rem 0.5rem;
+  }
+}
+
+@media (min-width: 991px){
+  .row{
+    margin: 0;
   }
 }
