@@ -140,3 +140,9 @@ i.fa-angle-up::before {
     margin: 0;
   }
 }
+
+@media (max-width: 375px){
+  div a.btn-outline-primary { 
+    margin-bottom: 0.5rem;
+  }
+}
