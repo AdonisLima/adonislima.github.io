@@ -142,7 +142,7 @@ i.fa-angle-up::before {
 }
 
 @media (max-width: 375px){
-  div a.btn-outline-primary { 
+  .masthead-btn-group a.btn-outline-primary { 
     margin-bottom: 0.5rem;
   }
 }
