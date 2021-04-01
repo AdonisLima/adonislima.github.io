@@ -1,153 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Montserrat font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Adônis Lima</title>
+  </head>
 
-  <!-- Custom css -->
-  <link rel="stylesheet" href="style.css">
-
-  <title>Adônis Lima</title>
-</head>
-
-<body>
-
-  <!-- Showcase -->
-  <div class="masthead d-flex">
-    <div class="container text-center my-auto text-white">
-      <h1 class="mb-3">Hi! I'm Adônis Lima,<br> front-end web developer.</h1>
-      <h3 class="mb-5">I'm currently based in Salvador - Bahia, Brazil.</h3>
-      <div class="masthead-btn-group">
-        <a class="btn btn-outline-primary rounded-pill btn-xl" href="#projects" role="button">Projects</a>
-        <a class="btn btn-outline-secondary rounded-pill btn-xl" href="#contact" role="button">Contact</a>
+  <body>
+    <!-- hero section -->
+    <section class="hero">
+      <div class="hero__content container">
+        <h1 class="hero__content__title">
+          Hi! I'm Adônis Lima,<br />
+          front-end web developer.
+        </h1>
+        <h3 class="hero__content__subtitle">
+          I'm currently based in Salvador - Bahia, Brazil.
+        </h3>
+        <div class="hero__content__cta">
+          <a class="hero__content__button primary-button" href="#projects">
+            Projects
+          </a>
+          <a class="hero__content__button secondary-button" href="#contact">
+            Contact
+          </a>
+        </div>
       </div>
-    </div>
-  </div>
-  <!-- Projects  -->
-  <section id="projects" class="text-center">
-    <div class="container content-section">
+    </section>
 
-      <div class="mb-5">
-        <h2>Projects</h2>
-      </div>
+    <!-- Projects  -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="projects-section__title">Projects</h2>
 
-      <!-- project card 2 -->
-      <div class="project-card mb-4">
-        <div class="row">
-          <div class=" col col-lg-6 md-12 col-sm-12 col-12 project-image">
-            <img src="img/projects/adon-ecotourism-demo.gif" alt="adon-acotourism-demo">
+        <!-- project card 2 -->
+        <div class="project-card mb-4">
+          <div class="row">
+            <div class="col col-lg-6 md-12 col-sm-12 col-12 project-image">
+              <img
+                src="img/projects/adon-ecotourism-demo.jpg"
+                alt="adon-acotourism-demo"
+              />
+            </div>
+            <div
+              class="col col-lg-6 md-12 col-sm-12 col-12 project-description text-left"
+            >
+              <div class="padding-on-mobile">
+                <h5 class="mt-3">Adon ecotourism</h5>
+                <hr />
+                <h6>Technologies used</h6>
+                <p>HTML, CSS, Bootstrap, SASS.</p>
+                <h6>Description</h6>
+                <p>
+                  A website for a fictional ecotourism agency based in the
+                  Amazon region.
+                </p>
+                <h6>Challenges</h6>
+                <p>First time using SASS.</p>
+                <div class="my-3">
+                  <a
+                    class="btn btn-outline-primary rounded-pill"
+                    href="https://adonislima.github.io/adon-ecotourism/"
+                    target="_blank"
+                  >
+                    Demo</a
+                  >
+                  <a
+                    class="btn btn-outline-secondary rounded-pill"
+                    href="https://github.com/AdonisLima/adon-ecotourism/"
+                    target="_blank"
+                  >
+                    Source code</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col col-lg-6 md-12 col-sm-12 col-12 project-description text-left">
-            <div class="padding-on-mobile">
-              <h5 class="mt-3">Adon ecotourism</h5>
-              <hr>
-              <h6>Technologies used</h6>
-              <p>HTML, CSS, Bootstrap, SASS.</p>
-              <h6>Description</h6>
-              <p>A website for a fictional ecotourism agency based in the Amazon region.</p>
-              <h6>Challenges</h6>
-              <p>First time using SASS.</p>
-              <div class="my-3">
-                <a class="btn btn-outline-primary rounded-pill" href="https://adonislima.github.io/adon-ecotourism/"
-                  target="_blank"> Demo</a>
-                <a class="btn btn-outline-secondary rounded-pill" href="https://github.com/AdonisLima/adon-ecotourism/"
-                  target="_blank"> Source code</a>
+        </div>
+
+        <!-- project card 1-->
+        <div class="project-card mb-4">
+          <div class="row">
+            <div class="col-lg-6 col md-12 col-sm-12 col-12 project-image">
+              <img src="img/projects/tetris-demo.png" alt="tetris-demo" />
+            </div>
+            <div
+              class="col-lg-6 col md-12 col-sm-12 col-12 project-description text-left"
+            >
+              <div class="padding-on-mobile">
+                <h5 class="mt-3">Tetris Clone</h5>
+                <hr />
+                <h6>Technologies used</h6>
+                <p>HTML (canvas), CSS, JavaScript</p>
+                <h6>Description</h6>
+                <p>
+                  A simple tetris clone made with vanilla JavaScript and HTML5
+                </p>
+                <h6>Challenges</h6>
+                <p>
+                  First time working with canvas.<br />
+                  First JavaScript project.
+                </p>
+                <div class="my-3">
+                  <a
+                    class="btn btn-outline-primary rounded-pill"
+                    href="https://adonislima.github.io/tetriss.js/"
+                    target="_blank"
+                    >Demo</a
+                  >
+                  <a
+                    class="btn btn-outline-secondary rounded-pill"
+                    href="https://github.com/AdonisLima/tetriss.js/"
+                    target="_blank"
+                    >Source code</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- project card 1-->
-      <div class="project-card mb-4">
-        <div class="row">
-          <div class="col-lg-6 col md-12 col-sm-12 col-12 project-image">
-            <img src="img/projects/tetris-demo.png" alt="tetris-demo">
-          </div>
-          <div class="col-lg-6 col md-12 col-sm-12 col-12 project-description text-left">
-            <div class="padding-on-mobile">
-              <h5 class="mt-3">Tetris Clone</h5>
-              <hr>
-              <h6>Technologies used</h6>
-              <p>HTML (canvas), CSS, JavaScript</p>
-              <h6>Description</h6>
-              <p>A simple tetris clone made with vanilla JavaScript and HTML5</p>
-              <h6>Challenges</h6>
-              <p>First time working with canvas.<br>
-                First JavaScript project.</p>
-              <div class="my-3">
-                <a class="btn btn-outline-primary rounded-pill" href="https://adonislima.github.io/tetriss.js/"
-                  target="_blank">Demo</a>
-                <a class="btn btn-outline-secondary rounded-pill" href="https://github.com/AdonisLima/tetriss.js/"
-                  target="_blank">Source code</a>
-              </div>
-            </div>
-          </div>
+    <!-- Contact -->
+    <footer id="contact">
+      <div class="container content-section text-center">
+        <div class="mb-5">
+          <h1 class="text-white">Contact</h1>
         </div>
+        <p class="text-white">adonislima26@gmail.com</p>
+        <ul class="list-inline mb-5">
+          <a
+            class="social-link rounded-circle text-white mr-3 btn-outline-primary"
+            href="https://www.linkedin.com/in/adonisjv-lima/"
+            target="_blank"
+          >
+            <li class="list-inline-item">
+              <i class="fab fa-linkedin"></i>
+            </li>
+          </a>
+          <a
+            class="social-link rounded-circle text-white mr-3 btn-outline-primary"
+            href="https://github.com/AdonisLima"
+            target="_blank"
+          >
+            <li class="list-inline-item">
+              <i class="fab fa-github"></i>
+            </li>
+          </a>
+        </ul>
       </div>
+    </footer>
 
-    </div>
-  </section>
+    <!--Back to the top button  -->
+    <button id="backToTheTopBtn" title="back to the top">
+      <i class="fa fa-angle-up"></i>
+    </button>
 
-  <!-- Contact -->
-  <footer id="contact">
-    <div class="container content-section text-center">
-      <div class="mb-5">
-        <h1 class="text-white">Contact</h1>
-      </div>
-      <p class="text-white">adonislima26@gmail.com</p>
-      <ul class="list-inline mb-5">
-        <a class="social-link rounded-circle text-white mr-3 btn-outline-primary"
-          href="https://www.linkedin.com/in/adonisjv-lima/" target="_blank">
-          <li class="list-inline-item">
-            <i class="fab fa-linkedin"></i>
-          </li>
-        </a>
-        <a class="social-link rounded-circle text-white mr-3 btn-outline-primary" href="https://github.com/AdonisLima"
-          target="_blank">
-          <li class="list-inline-item">
-            <i class="fab fa-github"></i>
-          </li>
-        </a>
-      </ul>
-    </div>
-  </footer>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/7301f33322.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!--Back to the top button  -->
-  <button id="backToTheTopBtn" title="back to the top">
-    <i class="fa fa-angle-up"></i>
-  </button>
-
-  <!-- Font awesome -->
-  <script src="https://kit.fontawesome.com/7301f33322.js" crossorigin="anonymous"></script>
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-
-  <!-- Popper -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-
-  <!-- Bootstrap -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-  <!-- Custom script -->
-  <script src="script.js"></script>
-
-</body>
-
+    <!-- Custom script -->
+    <script src="script.js"></script>
+  </body>
 </html>

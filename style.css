@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,49 +8,111 @@ body,
 html {
   width: 100%;
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
-h1,h2,h3,h4,h5, h6{
-  font-weight: 700;
+a {
+  text-decoration: none;
 }
 
-
-/* Masthead */
-.masthead{
-  margin: 0;
-  height: 100vh;
-  background: linear-gradient(-45deg, #333 0%, #222 100%);
+:root {
+  --baby-blue: #c3e0e5;
+  --dark-blue: #274472;
+  --blue-gray: #5885af;
+  --midnight-blue: #41729f;
 }
 
-.btn-xl {
-  padding: 1.15rem 2.20rem;
+.container {
+  width: 80vw;
+  align-self: center;
+}
+
+/* Buttons commons style */
+
+.primary-button {
+  color: var(--baby-blue);
+
+  background: transparent;
+  border-radius: 3rem;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--baby-blue);
+
+  transition: background-color 0.5s, border-color 0.3s;
+}
+
+.primary-button:hover {
+  background: var(--baby-blue);
+  color: var(--dark-blue);
+}
+
+.secondary-button {
+  color: var(--baby-blue);
+
+  background: transparent;
+  border-radius: 3rem;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--baby-blue);
+
+  transition: background-color 0.5s, border-color 0.3s;
+}
+
+.secondary-button:hover {
+  background: var(--baby-blue);
+  color: var(--dark-blue);
+}
+
+/* Hero section*/
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 95vh;
+
+  background: var(--dark-blue);
+}
+
+.hero__content__title {
+  color: var(--baby-blue);
+  font-size: calc(1rem + 2.5vw);
+}
+
+.hero__content__subtitle {
+  margin-top: 4px;
+
+  color: var(--baby-blue);
+  font-size: calc(1rem + 1vw);
+}
+
+.hero__content__cta {
+  display: flex;
+  margin-top: 24px;
+}
+
+.hero__content__button {
+  margin-right: 24px;
+  padding: calc(1rem + 0.75vw) calc(1rem + 2vw);
   font-size: 1.25rem;
 }
 
-.btn-outline-primary {
-  transition: background-color 0.5s, color 0.5s;
-  margin-right: .5rem;
-}
-
-.btn-outline-primary:hover {
-  background-color: #007BFE;
-  color: white; 
-}
-
-.btn-outline-secondary{
-  transition: background-color 0.5s, color 0.5s;
-}
-
-.btn-outline-secondary:hover {
-  background-color: #6C757D;
-  color: white;
-}
-
-.content-section {
+/* Projects section */
+.projects-section {
+  display: flex;
+  flex-direction: column;
   padding-top: 4.5em;
   padding-bottom: 4.5em;
+
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.projects-section__title {
+  color: var(--dark-blue);
+  font-size: calc(1rem + 1vw);
 }
 
 /* Project card */
@@ -61,19 +123,18 @@ h1,h2,h3,h4,h5, h6{
   object-fit: contain;
 }
 
-.project-card{
+.project-card {
   border: 1px solid gainsboro;
 }
 
 /* Footer */
-
 #contact {
   min-height: 80vh;
-  background: linear-gradient(-45deg, #333 0%, #222 100%);
+  background: var(--dark-blue);
 }
 
 .list-inline-item:not(:last-child) {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .social-link {
@@ -81,17 +142,17 @@ h1,h2,h3,h4,h5, h6{
   height: 4rem;
   width: 4rem;
   font-size: 2.5rem;
-  transition: background-color .25s;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+  transition: background-color 0.25s;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .social-link:hover {
-  background-color: #007BFE;
+  background-color: #007bfe;
   color: white;
 }
 
 /*Back to the top Button*/
-#backToTheTopBtn{
+#backToTheTopBtn {
   display: none;
   width: 40px;
   height: 40px;
@@ -101,7 +162,7 @@ h1,h2,h3,h4,h5, h6{
   z-index: 99;
   border: none;
   outline: none;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
   cursor: pointer;
   padding: 1rem;
@@ -109,7 +170,7 @@ h1,h2,h3,h4,h5, h6{
   font-size: 1.5rem;
 }
 
-#backToTheTopBtn:hover{
+#backToTheTopBtn:hover {
   background-color: #555;
 }
 
@@ -121,28 +182,29 @@ i.fa-angle-up::before {
   width: 100%;
 }
 
-
 /* Media queries */
-@media (max-width: 600px) { 
-  h1, h2, h3{
+@media (max-width: 600px) {
+  h1,
+  h2,
+  h3 {
     font-size: 1.5rem;
   }
 }
 
-@media (max-width: 991px){
-  .padding-on-mobile{
+@media (max-width: 991px) {
+  .padding-on-mobile {
     padding: 0.5rem 0.5rem 0.5rem;
   }
 }
 
-@media (min-width: 991px){
-  .row{
+@media (min-width: 991px) {
+  .row {
     margin: 0;
   }
 }
 
-@media (max-width: 375px){
-  div.masthead-btn-group a { 
+@media (max-width: 375px) {
+  div.masthead-btn-group a {
     margin-bottom: 0.5rem;
   }
 }
