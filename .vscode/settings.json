@@ -1,0 +1,11 @@
+{
+  "cSpell.words": [
+    "lightningcss",
+    "packagejson",
+    "tailwindcss",
+    "tilg",
+    "wireit"
+  ],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
