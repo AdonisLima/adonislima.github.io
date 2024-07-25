@@ -1,8 +1,8 @@
 import { lazy, Suspense } from "react";
 import { type RouteObject } from "react-router-dom";
 
-const Home = lazy(() => import("@/pages/home"));
-const Notfound = lazy(() => import("@/pages/404"));
+const Home = lazy(() => import("@/modules/app/presentation/pages/home"));
+const Notfound = lazy(() => import("@/modules/app/presentation/pages/404"));
 
 export const routes: Array<RouteObject> = [
   {
