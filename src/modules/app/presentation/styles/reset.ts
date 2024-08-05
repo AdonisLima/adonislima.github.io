@@ -88,7 +88,6 @@ video {
   font-size: 100%;
   vertical-align: baseline;
 
-  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
 

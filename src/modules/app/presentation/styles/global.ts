@@ -1,8 +1,11 @@
 import { createGlobalStyle } from "styled-components";
-import { colors } from "./colors";
 
 export const GlobalStyle = createGlobalStyle`
-  div, section {
-    background-color: ${colors.secondary1};
+  * {
+    font-family: "Inter", sans-serif;
+  }
+
+ html {
+  scroll-behavior: smooth !important;
   }
 `;

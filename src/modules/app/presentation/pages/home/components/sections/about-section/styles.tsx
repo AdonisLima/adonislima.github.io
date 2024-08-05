@@ -4,10 +4,14 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.section`
   position: relative;
-  height: 25vh;
-  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 64px 0 178px 0;
 
   color: ${colors.text1};
+  background-color: ${colors.secondary1};
 
   &:after {
     position: absolute;
@@ -25,4 +29,17 @@ export const Container = styled.section`
 
     ${skewedShape}
   }
+`;
+
+export const AboutMeText = styled.p`
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 1144px;
+
+  color: ${colors.primary1};
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 34px;
 `;

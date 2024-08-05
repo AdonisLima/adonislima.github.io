@@ -1,7 +1,7 @@
 import { Hero } from "./components";
-import { About } from "./components/about";
-import { Contact } from "./components/contact";
-import { Projects } from "./components/projects";
+import { About } from "./components/sections/about-section";
+import { Contact } from "./components/sections/contact-section";
+import { Projects } from "./components/sections/projects-section";
 
 export default function Home() {
   return (

@@ -4,11 +4,14 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.section`
   position: relative;
-  height: 100vh;
-  width: 100vw;
 
-  background-color: ${colors.primary1};
-  color: ${colors.text2};
+  padding: 64px 0 100px 0;
+
+  background-color: ${colors.secondary1};
+
+  color: ${colors.text1};
+
+  overflow: hidden;
 
   &:after {
     position: absolute;
@@ -20,7 +23,7 @@ export const Container = styled.section`
     display: block;
     width: 100%;
     height: 70px;
-    background-color: ${colors.secondary1};
+    background-color: ${colors.tertiary1};
 
     content: "";
 
@@ -28,10 +31,13 @@ export const Container = styled.section`
   }
 `;
 
-export const Presentation = styled.h1``;
-
-export const Occupation = styled.h2``;
-
-export const Location = styled.h3``;
-
-export const Button = styled.button``;
+export const ContactButtonsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+  justify-content: space-around;
+  gap: 16px;
+  margin-top: 48px;
+  margin-bottom: 10px;
+`;
