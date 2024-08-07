@@ -7,28 +7,31 @@ export const Container = styled.article.attrs({ className: "project-card" })`
   flex-direction: row;
   flex-wrap: wrap;
   background-color: ${colors.secondary1};
-  max-width: 472px;
-  min-width: 472px;
+  max-width: 70%;
 
   color: ${colors.primary1};
   box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1114px) {
     max-width: 1090px;
     min-width: 1090px;
   }
 `;
 
 export const Image = styled.img`
-  width: 472px;
+  width: 100%;
   height: 420px;
   padding: 0;
   margin: 0;
 
   background-color: ${colors.tertiary1};
   object-fit: contain;
+
+  @media (min-width: 1114px) {
+    width: 472px;
+  }
 `;
 
 export const TextContentContainer = styled.div`
