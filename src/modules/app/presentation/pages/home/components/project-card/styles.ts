@@ -7,7 +7,7 @@ export const Container = styled.article.attrs({ className: "project-card" })`
   flex-direction: row;
   flex-wrap: wrap;
   background-color: ${colors.secondary1};
-  max-width: 70%;
+  max-width: 80%;
 
   color: ${colors.primary1};
   box-shadow:

@@ -33,13 +33,18 @@ export const Container = styled.section`
 
 export const AboutMeText = styled.p`
   margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   max-width: 1144px;
 
   color: ${colors.primary1};
-  font-size: 1.75rem;
   font-weight: 500;
   text-align: center;
-  line-height: 34px;
+  font-size: 1.5rem;
+  line-height: 29px;
+
+  @media (min-width: 1114px) {
+    font-size: 1.75rem;
+    line-height: 34px;
+  }
 `;
