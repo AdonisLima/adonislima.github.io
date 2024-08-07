@@ -38,7 +38,7 @@ export const TextContentContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 23px;
+  font-size: 1.438rem;
   font-weight: 700;
   line-height: 28px;
 
@@ -50,13 +50,13 @@ export const SubjectGroup = styled.div`
 `;
 
 export const Subtitle = styled.h2`
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 20px;
 `;
 
 export const Text = styled.p`
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 20px;
   text-align: left;
@@ -66,6 +66,7 @@ export const ButtonGroup = styled.div`
   display: flex;
   gap: 24px;
   margin-top: auto;
+  flex-wrap: wrap;
 `;
 
 export const Button = styled(DefaultButton)`
@@ -85,7 +86,7 @@ export const Button = styled(DefaultButton)`
   }
 
   > .button__label {
-    font-size: 23px;
+    font-size: 1.438rem;
     line-height: 28px;
   }
 `;

@@ -38,7 +38,7 @@ export const AboutMeText = styled.p`
   max-width: 1144px;
 
   color: ${colors.primary1};
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 500;
   text-align: center;
   line-height: 34px;

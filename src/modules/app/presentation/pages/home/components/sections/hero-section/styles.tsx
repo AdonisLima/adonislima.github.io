@@ -42,21 +42,21 @@ export const PresentationContainer = styled.div`
 `;
 
 export const Salutation = styled.h1`
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 48px;
   margin-bottom: 32px;
 `;
 
 export const Occupation = styled.h2`
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 600;
   line-height: 58px;
   margin-bottom: 24px;
 `;
 
 export const Location = styled.h3`
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
   line-height: 34px;
   margin-bottom: 56px;
