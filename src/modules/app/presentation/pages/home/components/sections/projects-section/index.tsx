@@ -11,7 +11,7 @@ export function Projects() {
   const projectList = [
     {
       title: "Tetris Clone",
-      image: adonEcotourismScreenshot,
+      image: tetrisDemoScreenshot,
       projectInfo: [
         {
           subtitle: "Technologies used",
@@ -40,7 +40,7 @@ export function Projects() {
 
     {
       title: "Adon ecotourism",
-      image: tetrisDemoScreenshot,
+      image: adonEcotourismScreenshot,
       projectInfo: [
         { subtitle: "Technologies used", text: "HTML, CSS, Bootstrap, SASS." },
         {
