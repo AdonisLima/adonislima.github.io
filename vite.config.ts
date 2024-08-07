@@ -16,6 +16,7 @@ export default defineConfig({
     tsPaths(),
   ],
   build: {
+    outDir: "./build",
     cssMinify: "lightningcss",
     rollupOptions: {
       output: {
