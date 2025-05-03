@@ -2,4 +2,10 @@
 
 A showcase of projects and skills
 
-https://adonislima.github.io/
+https://adonisl.me/
+
+## How to deploy
+
+```shell
+npm run deploy
+```

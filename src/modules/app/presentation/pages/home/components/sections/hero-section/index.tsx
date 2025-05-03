@@ -1,3 +1,4 @@
+import { FadeInTransition } from "@/modules/app/presentation/components/fade-in-transition";
 import { Button } from "../../button";
 import { SplitText } from "../../split-text";
 import { Container } from "./styles";
@@ -20,7 +21,7 @@ export function Hero() {
 
         <SplitText
           tag="h2"
-          className={styles.ocupation}
+          className={styles.occupation}
           text="Front-end developer"
           delay={30}
           animationFrom={{ opacity: 0, transform: "translate3d(0,500px,0)" }}
@@ -40,10 +41,12 @@ export function Hero() {
           rootMargin="-50px"
         />
 
-        <div className={styles.buttonGroupContainer}>
-          <Button href="#projects">Projects</Button>
-          <Button href="#contact">Contact</Button>
-        </div>
+        <FadeInTransition>
+          <div className={styles.buttonGroupContainer}>
+            <Button href="#projects">Projects</Button>
+            <Button href="#contact">Contact</Button>
+          </div>
+        </FadeInTransition>
       </div>
     </Container>
   );
