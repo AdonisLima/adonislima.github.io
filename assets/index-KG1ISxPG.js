@@ -142,13 +142,17 @@ table {
   border-spacing: 0;
 }
 `,hn=Wt`
+  html {
+    scroll-behavior: smooth;
+  }
+
   * {
     font-family: "Inter", sans-serif;
   }
-`;function mn(){return A.jsxs(z.Fragment,{children:[A.jsx(dn,{}),A.jsx(hn,{}),A.jsx(tr,{}),A.jsx(rr,{})]})}const gn="modulepreload",yn=function(e){return"/"+e},mt={},Ut=function(t,r,n){let o=Promise.resolve();if(r&&r.length>0){const s=document.getElementsByTagName("link");o=Promise.all(r.map(i=>{if(i=yn(i),i in mt)return;mt[i]=!0;const a=i.endsWith(".css"),c=a?'[rel="stylesheet"]':"";if(!!n)for(let l=s.length-1;l>=0;l--){const h=s[l];if(h.href===i&&(!a||h.rel==="stylesheet"))return}else if(document.querySelector(`link[href="${i}"]${c}`))return;const f=document.createElement("link");if(f.rel=a?"stylesheet":gn,a||(f.as="script",f.crossOrigin=""),f.href=i,document.head.appendChild(f),a)return new Promise((l,h)=>{f.addEventListener("load",l),f.addEventListener("error",()=>h(new Error(`Unable to preload CSS for ${i}`)))})}))}return o.then(()=>t()).catch(s=>{const i=new Event("vite:preloadError",{cancelable:!0});if(i.payload=s,window.dispatchEvent(i),!i.defaultPrevented)throw s})},vn=z.lazy(()=>Ut(()=>import("./index-AniRU1iu.js"),__vite__mapDeps([0,1,2]))),bn=z.lazy(()=>Ut(()=>import("./index-zuB9Z8NL.js"),__vite__mapDeps([3,1]))),Sn=[{path:"/",element:A.jsx(z.Suspense,{children:A.jsx(vn,{})})},{path:"*",element:A.jsx(z.Suspense,{children:A.jsx(bn,{})})}],wn=nr([{path:"/",element:A.jsx(mn,{}),children:Sn,errorElement:A.jsx("div",{children:"error"})}]),xn=document.getElementById("root"),_n=vt(xn);_n.render(A.jsx(z.StrictMode,{children:A.jsx(or,{router:wn,fallbackElement:A.jsx("div",{children:"loading..."})})}));export{qt as a,A as j,ln as u};
+`;function mn(){return A.jsxs(z.Fragment,{children:[A.jsx(dn,{}),A.jsx(hn,{}),A.jsx(tr,{}),A.jsx(rr,{})]})}const gn="modulepreload",yn=function(e){return"/"+e},mt={},Ut=function(t,r,n){let o=Promise.resolve();if(r&&r.length>0){const s=document.getElementsByTagName("link");o=Promise.all(r.map(i=>{if(i=yn(i),i in mt)return;mt[i]=!0;const a=i.endsWith(".css"),c=a?'[rel="stylesheet"]':"";if(!!n)for(let l=s.length-1;l>=0;l--){const h=s[l];if(h.href===i&&(!a||h.rel==="stylesheet"))return}else if(document.querySelector(`link[href="${i}"]${c}`))return;const f=document.createElement("link");if(f.rel=a?"stylesheet":gn,a||(f.as="script",f.crossOrigin=""),f.href=i,document.head.appendChild(f),a)return new Promise((l,h)=>{f.addEventListener("load",l),f.addEventListener("error",()=>h(new Error(`Unable to preload CSS for ${i}`)))})}))}return o.then(()=>t()).catch(s=>{const i=new Event("vite:preloadError",{cancelable:!0});if(i.payload=s,window.dispatchEvent(i),!i.defaultPrevented)throw s})},vn=z.lazy(()=>Ut(()=>import("./index-HuFuh1zt.js"),__vite__mapDeps([0,1,2]))),bn=z.lazy(()=>Ut(()=>import("./index-roCboR1q.js"),__vite__mapDeps([3,1]))),Sn=[{path:"/",element:A.jsx(z.Suspense,{children:A.jsx(vn,{})})},{path:"*",element:A.jsx(z.Suspense,{children:A.jsx(bn,{})})}],wn=nr([{path:"/",element:A.jsx(mn,{}),children:Sn,errorElement:A.jsx("div",{children:"error"})}]),xn=document.getElementById("root"),_n=vt(xn);_n.render(A.jsx(z.StrictMode,{children:A.jsx(or,{router:wn,fallbackElement:A.jsx("div",{children:"loading..."})})}));export{qt as a,A as j,ln as u};
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/index-AniRU1iu.js","assets/react-vendor-EAM4oYjW.js","assets/index-Xt881S44.css","assets/index-zuB9Z8NL.js"]
+    __vite__mapDeps.viteFileDeps = ["assets/index-HuFuh1zt.js","assets/react-vendor-EAM4oYjW.js","assets/index-IGAoEtVW.css","assets/index-roCboR1q.js"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }
