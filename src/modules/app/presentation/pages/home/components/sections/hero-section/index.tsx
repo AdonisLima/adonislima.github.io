@@ -1,3 +1,4 @@
+import { FadeInTransition } from "@/modules/app/presentation/components/fade-in-transition";
 import { Button } from "../../button";
 import { SplitText } from "../../split-text";
 import { Container } from "./styles";
@@ -40,10 +41,12 @@ export function Hero() {
           rootMargin="-50px"
         />
 
-        <div className={styles.buttonGroupContainer}>
-          <Button href="#projects">Projects</Button>
-          <Button href="#contact">Contact</Button>
-        </div>
+        <FadeInTransition>
+          <div className={styles.buttonGroupContainer}>
+            <Button href="#projects">Projects</Button>
+            <Button href="#contact">Contact</Button>
+          </div>
+        </FadeInTransition>
       </div>
     </Container>
   );

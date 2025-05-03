@@ -6,6 +6,7 @@ import {
   adonEcotourismScreenshot,
   tetrisDemoScreenshot,
 } from "@/modules/app/presentation/assets";
+import { FadeInTransition } from "@/modules/app/presentation/components/fade-in-transition";
 
 export function Projects() {
   const projectList = [
@@ -67,11 +68,15 @@ export function Projects() {
 
   return (
     <Container id="projects">
-      <SectionTitle color={colors.secondary1}>Projects</SectionTitle>
+      <FadeInTransition>
+        <SectionTitle color={colors.secondary1}>Projects</SectionTitle>
+      </FadeInTransition>
 
       <ProjectCardsContainer>
         {projectList.map((project) => (
-          <ProjectCard data={project} />
+          <FadeInTransition>
+            <ProjectCard data={project} />
+          </FadeInTransition>
         ))}
       </ProjectCardsContainer>
     </Container>
