@@ -20,7 +20,7 @@ export function Hero() {
 
         <SplitText
           tag="h2"
-          className={styles.ocupation}
+          className={styles.occupation}
           text="Front-end developer"
           delay={30}
           animationFrom={{ opacity: 0, transform: "translate3d(0,500px,0)" }}
