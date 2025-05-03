@@ -1,0 +1,34 @@
+.presentation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.salutation-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 48px;
+  margin-bottom: 32px;
+}
+
+.ocupation {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 58px;
+  margin-bottom: 24px;
+}
+
+.location {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 56px;
+}
+
+.button-group-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}

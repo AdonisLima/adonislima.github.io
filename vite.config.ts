@@ -15,6 +15,11 @@ export default defineConfig({
     }),
     tsPaths(),
   ],
+  css: {
+    modules: {
+      localsConvention: "camelCase",
+    },
+  },
   build: {
     outDir: "./build",
     cssMinify: "lightningcss",
